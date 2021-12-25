@@ -5,10 +5,10 @@ import Container from '../components/atoms/Container'
 export default function Report(){ 
     return (
         <>
-        <h1>Report a stolen Vehicle</h1>
-        <Container size="md">
-            <ReportForm />
-        </Container>
+            <Container size="md">
+                <h1 className="text-center">Report a stolen Vehicle</h1>
+                <ReportForm />
+            </Container>
         </>
     )
 }

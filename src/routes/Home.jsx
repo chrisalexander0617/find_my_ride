@@ -1,6 +1,5 @@
 import React from 'react'
 import { methods } from '../functions/methods'
-
 import Container from '../components/atoms/Container'
 import { Button }  from '../components/atoms/Button'
 
