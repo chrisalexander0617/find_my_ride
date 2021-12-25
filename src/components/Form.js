@@ -6,17 +6,9 @@ export default function Form(){
     const [model, setModel] = useState("")
     const [license, setLicense] = useState("")
     
-    const handleChangeMake = e => { 
-        setMake(e.target.value) 
-    }
-
-    const handleChangeModel = e => { 
-        setModel(e.target.value) 
-    }
-
-    const handleChangeLicense = e => { 
-        setLicense(e.target.value) 
-    }
+    const handleChangeMake = e => setMake(e.target.value)
+    const handleChangeModel = e => setModel(e.target.value) 
+    const handleChangeLicense = e => setLicense(e.target.value) 
     
     const handleSubmit = e => {
         e.preventDefault()
