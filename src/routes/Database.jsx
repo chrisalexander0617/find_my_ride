@@ -22,7 +22,7 @@ export default function Database(){
        }
 
        getVehicles()
-    },[])
+    },[vehiclesRef])
     
     return (
         <>
