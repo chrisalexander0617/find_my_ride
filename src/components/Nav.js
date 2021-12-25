@@ -18,7 +18,7 @@ export default function Nav(){
                     <Link to="/">Home</Link>
                     <Link to="/find">Find</Link>
                     <Link to="/report">Report</Link>
-                
+                    
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="find" element={<Find />} />
