@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Input } from '../components/atoms/Input'
 import { Button } from '../components/atoms/Button'
 
 export default function ReportForm(){
@@ -14,16 +15,16 @@ export default function ReportForm(){
     
     const handleSubmit = e => {
         e.preventDefault()
-        console.log(make, model, license)
+        console.log(make, model, license, VIN)
     }
 
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <input required onChange={handleChangeMake} value={make} placeholder="Make" />
-                <input required onChange={handleChangeModel} value={model} placeholder="Model" />
-                <input required onChange={handleChangeLicense} value={license} placeholder="License #" />
-                <input onChange={handleChangeVIN} value={VIN} placeholder="VIN #" />
+                <Input placeholder="Make" handleChange={handleChangeMake} required="required" />
+                <Input placeholder="Model" handleChange={handleChangeModel} required="required" />
+                <Input placeholder="License" handleChange={handleChangeLicense} required="required" />
+                <Input placeholder="VIN" handleChange={handleChangeVIN} required="required" />
                 <Button classes="bg-gray-400" type="submit" text="Submit" />
             </form>
         </>
