@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import { Button } from '../components/atoms/Button'
+import { Button } from './atoms/Button'
 
-export default function Form(){
+export default function FindForm(){
     const [make, setMake] = useState("")
     const [model, setModel] = useState("")
     const [license, setLicense] = useState("")

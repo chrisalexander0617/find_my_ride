@@ -1,11 +1,11 @@
 import React from 'react'
-import Form from '../components/Form'
+import FindForm from '../components/FindForm'
 
 export default function Find(){ 
     return (
         <>
-            <h1>Find Page</h1>
-            <Form />
+            <h1>Find Your Vehicle</h1>
+            <FindForm />
         </>
     ) 
 }
