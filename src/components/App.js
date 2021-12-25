@@ -10,6 +10,7 @@ import Layout from '../components/layouts/Layout'
 import Home from '../routes/Home'
 import Find from '../routes/Find'
 import Report from '../routes/Report';
+import Database from '../routes/Database';
 import '../App.css';
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="find" element={<Find />} />
               <Route path="report" element={<Report />} />
+              <Route path="database" element={<Database />} />
           </Routes>
         </Layout>
       </BrowserRouter>

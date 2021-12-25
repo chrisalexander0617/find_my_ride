@@ -4,7 +4,7 @@ import { methods } from '../functions/methods'
 import Container from '../components/atoms/Container'
 import { Button }  from '../components/atoms/Button'
 
-export default function(){
+export default function Home(){
     return (
         <>
             <Container>
