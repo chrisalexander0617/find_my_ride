@@ -34,7 +34,7 @@ export default function ReportForm(props){
                 date:date,
                 img:img
             }
-        ).then(navigate('/'));
+        ).then(navigate('/safety'));
     }
 
     return (
