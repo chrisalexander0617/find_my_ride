@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Input } from '../components/atoms/Input'
 import { Button } from '../components/atoms/Button'
 import { db } from '../firebase'
@@ -12,6 +12,7 @@ export default function ReportForm(props){
     const [license, setLicense] = useState("")
     const [VIN, setVIN] = useState("");
     const [location, setLocation] = useState("")
+    const [img, setImg] = useState("")
 
     const vehiclesRef = collection(db, 'vehicles')
 
@@ -30,21 +31,30 @@ export default function ReportForm(props){
                 license:license,
                 VIN:VIN,
                 location:location,
-                date:date
+                date:date,
+                img:img
             }
         ).then(navigate('/'));
     }
 
     return (
         <>
-            <form className="grid grid-cols-2 gap-3" onSubmit={addVehicle}>
-                <Input type="text" placeholder="Make" handleChange={e => setMake(e.target.value)} required="required" />
-                <Input type="text" placeholder="Model" handleChange={e => setModel(e.target.value)} required="required" />
-                <Input type="text" placeholder="Color" handleChange={e => setColor(e.target.value)} required="required" />
-                <Input type="text" placeholder="License" handleChange={e => setLicense(e.target.value)} required="required" />
-                <Input type="text" placeholder="VIN" handleChange={e => setVIN(e.target.value)} required="required" />
-                <Input type="text" placeholder="Location" handleChange={e => setLocation(e.target.value)} required="required" />
-                <Button classes="bg-blue-600" type="submit" text="Submit" />
+            <form onSubmit={addVehicle}>
+                <div className="grid grid-cols-2 gap-3">
+                    <Input type="text" placeholder="Make" handleChange={e => setMake(e.target.value)} required="required" />
+                    <Input type="text" placeholder="Model" handleChange={e => setModel(e.target.value)} required="required" />
+                    <Input type="text" placeholder="Color" handleChange={e => setColor(e.target.value)} required="required" />
+                    <Input type="text" placeholder="License" handleChange={e => setLicense(e.target.value)} required="required" />
+                    <Input type="text" placeholder="VIN" handleChange={e => setVIN(e.target.value)} required="required" />
+                    <Input type="text" placeholder="Location" handleChange={e => setLocation(e.target.value)} required="required" />
+                    <Input type="file" placeholder="Image" handleChange={e => setImg(e.target.value)} required="required" text="Upload" />
+                </div>
+                <div className="grid grid-cols-1 gap-3">
+                    <Button classes="bg-blue-600 my-5 w-full" type="submit" text="Submit" />
+                </div>
+                <div className="grid grid-cols-1 gap-3">
+                    <Link to="/"><Button classes="bg-gray-100 text-blue-900 w-full" text="Go Back" /></Link>
+                </div>
             </form>
         </>
     )

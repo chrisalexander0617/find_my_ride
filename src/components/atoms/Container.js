@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Container({children}){
+export const Container = ({children}) => {
     return (
         <>
-            <div className={`sm:container mx-auto flex justify-center items-center flex-col`}>{children}</div>
+            <div className={`container sm:container mx-auto flex justify-center items-center flex-col px-10`}>{children}</div>
         </>
     )
 }

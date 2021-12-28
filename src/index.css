@@ -11,11 +11,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.card {
+  height:auto;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+.container {
+  height:100vh;
+  width:100vw;
+}
+
+input {
+  text-transform: uppercase;
+}
 .splash-screen {
   background-color:#222751;
   height:100vh;
@@ -25,7 +37,6 @@ code {
   align-items:center;
   gap:4;
   flex-direction:column;
-  text-align:center;
 }
 
 .splash-screen h1 {

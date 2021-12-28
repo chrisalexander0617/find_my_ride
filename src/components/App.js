@@ -10,6 +10,7 @@ import Home from '../routes/Home'
 import Find from '../routes/Find'
 import Report from '../routes/Report'
 import Database from '../routes/Database'
+import Safety from '../routes/Safety'
 import '../App.css'
 
 export default function App() {
@@ -17,12 +18,13 @@ export default function App() {
     <>
       <BrowserRouter>
         <Layout>
-          <Nav />
+        {/* <Nav /> */}
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="find" element={<Find />} />
               <Route path="report" element={<Report />} />
               <Route path="database" element={<Database />} />
+              <Route path="safety" element={<Safety />} />
           </Routes>
         </Layout>
       </BrowserRouter>

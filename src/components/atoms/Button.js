@@ -8,12 +8,10 @@ export const Button = props => {
                 onClick={props.handleClick} 
                 className={` 
                 btn
-                mx-2
                 px-12 
                 py-3 
                 text-white 
                 rounded-lg 
-                shadow-lg
                 ${props.classes}`}
                 >
                 {props.text}
