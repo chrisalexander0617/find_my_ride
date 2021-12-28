@@ -14,8 +14,13 @@ export default function ReportForm(){
 
     const vehiclesRef = collection(db, 'vehicles')
     
-    const addVehicle = async e => {
+    const addVehicle = async (e) => {
         e.preventDefault()
+
+        let date = new Date()
+
+        console.log(date)
+
         await addDoc(vehiclesRef, 
             {
                 make:make,
@@ -23,7 +28,8 @@ export default function ReportForm(){
                 color:color,
                 license:license,
                 VIN:VIN,
-                location:location
+                location:location,
+                date:date
             }
         )
     }

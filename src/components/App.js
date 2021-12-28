@@ -4,21 +4,20 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-
-import Nav from '../components/Nav'
-import Layout from '../components/layouts/Layout'
+import Nav from './Nav'
+import Layout from './layouts/Layout'
 import Home from '../routes/Home'
 import Find from '../routes/Find'
-import Report from '../routes/Report';
-import Database from '../routes/Database';
-import '../App.css';
+import Report from '../routes/Report'
+import Database from '../routes/Database'
+import '../App.css'
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
-        <Nav />
         <Layout>
+          <Nav />
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="find" element={<Find />} />

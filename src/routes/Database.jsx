@@ -9,8 +9,12 @@ export default function Database(){
     const vehiclesRef = collection(db, 'vehicles')
    
     useEffect(() => {
+
+        let isMounted = true 
+
         const getVehicles = async () => {
         const data = await getDocs(vehiclesRef)
+
         setVehicles(data.docs.map( doc => (
                         {
                             ...doc.data(), 
@@ -22,7 +26,9 @@ export default function Database(){
        }
 
        getVehicles()
-    },[vehiclesRef])
+
+       return () => { isMounted = false }
+    },[])
     
     return (
         <>
@@ -32,11 +38,12 @@ export default function Database(){
                     return ( 
                         <Card 
                             key={i}
-                            make={vehicle.make}  
-                            model={vehicle.model} 
-                            color={vehicle.color}  
-                            license={vehicle.license} 
-                            location={vehicle.location} 
+                            make={vehicle.make ? vehicle.make : 'Null'}  
+                            model={vehicle.model ? vehicle.mode : 'Null' } 
+                            color={vehicle.color ? vehicle.color : 'Null' }  
+                            license={vehicle.license ? vehicle.license : 'Null' } 
+                            location={vehicle.location ? vehicle.location : 'Null' } 
+                          
                         />
                     ) 
                 })}

@@ -10,6 +10,7 @@ export default function Card(props){
                     <p>color: {props.color}</p>
                     <p>license: {props.license}</p>
                     <p>location: {props.location}</p>
+                    <p>date: { props.date ? props.date : "No Date"}</p>
                 </div>
             </div>
         </>
