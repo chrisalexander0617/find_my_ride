@@ -21,8 +21,6 @@ export default function ReportForm(props){
     const addVehicle = async (e) => {
         e.preventDefault()
 
-        let date = new Date()
-
         await addDoc(vehiclesRef, 
             {
                 make:make,
@@ -31,7 +29,6 @@ export default function ReportForm(props){
                 license:license,
                 VIN:VIN,
                 location:location,
-                date:date,
                 img:img
             }
         ).then(navigate('/safety'));
