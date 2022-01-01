@@ -47,7 +47,6 @@ export default function Database(){
                             color={vehicle.color ? vehicle.color : 'Null' }  
                             license={vehicle.license ? vehicle.license : 'Null' } 
                             location={vehicle.location ? vehicle.location : 'Null' } 
-                            
                         />
                     ) 
                 })}
