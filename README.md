@@ -16,7 +16,11 @@ vehicle, which will allow owners to quickly file insurance claims to help get th
 Businesses who sell anti-theft devices and services will be given the option to advertise their products to visitors on the site for a monthly cost once enough users are on the platform.
 
 ## Prerequisites
+Running `yarn install` or `npm install` will install the dependencies but doing them manually also works if you run into any issues
 * Node.js v 16.13.1
+* React v 17.0.2 or higher
+* Firebase v9 or higher
+* dot-env
 
 
 ## Available Scripts
