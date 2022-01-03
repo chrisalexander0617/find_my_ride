@@ -22,6 +22,8 @@ Running `yarn install` or `npm install` will install the dependencies but doing 
 * Firebase v9 or higher
 * dot-env
 
+### Firebase Setup
+Create a firebase account and create a new app https://console.firebase.google.com/
 
 ## Available Scripts
 
