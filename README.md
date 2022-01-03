@@ -23,7 +23,7 @@ Running `yarn install` or `npm install` will install the dependencies but doing 
 * dot-env
 
 ### Firebase Setup
-Create a firebase account and create a new app https://console.firebase.google.com/. 
+Create a firebase account and create a new app https://console.firebase.google.com/. Afterwards, create a web app and copy and paste the SDK variables and add them to an `.env.local` file in the root of the application so it can be used inside of `firebase.js`
 
 ## Available Scripts
 
