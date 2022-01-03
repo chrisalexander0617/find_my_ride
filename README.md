@@ -1,7 +1,7 @@
 
-<img align="left" width="100" height="100" src="https://github.com/chrisalexander0617/find_my_ride/blob/master/src/find_my_ride_logo.png?raw=true">
-
-
+<p align="center">
+  <img width="100%" height="100" src="https://github.com/chrisalexander0617/find_my_ride/blob/master/src/find_my_ride_logo.png?raw=true">
+</p>
 
 # Find My Ride
 
