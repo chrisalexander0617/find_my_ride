@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="100%" height="100%" src="https://github.com/chrisalexander0617/find_my_ride/blob/master/src/find_my_ride_logo.png?raw=true">
+  <img style="shadow:none" width="100%" height="100%" src="https://github.com/chrisalexander0617/find_my_ride/blob/master/src/find_my_ride_logo.png?raw=true">
 </p>
 
 # Find My Ride
@@ -23,7 +23,7 @@ Running `yarn install` or `npm install` will install the dependencies but doing 
 * dot-env
 
 ### Firebase Setup
-Create a firebase account and create a new app https://console.firebase.google.com/
+Create a firebase account and create a new app https://console.firebase.google.com/. 
 
 ## Available Scripts
 
