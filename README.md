@@ -1,9 +1,17 @@
 ![alt text](https://github.com/chrisalexander0617/find_my_ride/blob/master/src/find_my_ride_logo.png?raw=true)
 
 
-# Getting Started with Create React App
+# Find My Ride
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Find my ride is an app that allows users to report and recover their stolen/missing vehciles
+in cities where law-enforcement may not be able to provide full assistnance.
+
+Users will signup in order to make a report of a stolen vehicle that will be stored into a protected databse where
+they can verify the status of the car only when the user types in a query using the VIN or license plate number to retrieve 
+it. This allows only the owner to access the vehciles current location to prevent illegal towing and ransom to recover the stolen
+vehicle, which will allow owners to quickly file insurance claims to help get them back on the road. 
+
+Businesses who sell anti-theft devices and services will be given the option to advertise their products to visitors on the site for a monthly cost once enough users are on the platform.
 
 ## Available Scripts
 
