@@ -15,6 +15,10 @@ vehicle, which will allow owners to quickly file insurance claims to help get th
 
 Businesses who sell anti-theft devices and services will be given the option to advertise their products to visitors on the site for a monthly cost once enough users are on the platform.
 
+## Prerequisites
+* Node.js v 16.13.1
+
+
 ## Available Scripts
 
 In the project directory, you can run:
