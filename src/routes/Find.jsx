@@ -30,7 +30,7 @@ export default function Find(){
         <>
             <h1>Find Your Vehicle</h1>
             <form>
-                <input 
+                <input c
                     onChange 
                     type="text" 
                     placeholder="License"  

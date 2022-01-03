@@ -6,9 +6,14 @@ import Card from '../components/atoms/Card'
 export default function Database(){
     const [vehicles, setVehicles] = useState([])
     const vehiclesRef = collection(db, 'vehicles')
-   
-    useEffect(() => {
 
+    const { user, loading, logout } = {
+        user:true,
+        loading:false, 
+        logout:() => {}
+    };
+
+    useEffect(() => {
         let isMounted = true 
 
         const getVehicles = async () => {
@@ -28,12 +33,24 @@ export default function Database(){
 
        return () => { isMounted = false }
     },[])
+
+    if(!user) {
+        return (
+            <>
+                <div className="sm:container mx-auto px-10 py-12 flex gap-4 flex-col">
+                    <h1 className="text-4xl font-bold text-blue-800">Please login</h1>
+                    <button className="bg-blue-900 shadow-lg p-2 rounded text-white">Login</button>
+                </div>
+            </>
+        )
+    } 
     
     return (
         <>
             <div className="sm:container mx-auto px-10 py-12 flex gap-4 flex-col">
                 <h1 className="text-4xl font-bold text-blue-800">Stolen Vehicles</h1>
                 <p className="text-gray-700">Find your missing vehicle today</p>
+                <button onClick={logout} className="bg-blue-900 shadow-lg p-2 rounded text-white">Logout</button>
             </div>
             <div className="sm:container mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 px-10">
                 {vehicles.map((vehicle, i) => {
