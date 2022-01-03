@@ -1,3 +1,6 @@
+![alt text](https://github.com/chrisalexander0617/find_my_ride/blob/master/src/find_my_ride_logo.png?raw=true)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
