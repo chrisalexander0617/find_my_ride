@@ -11,6 +11,9 @@
 # production
 /build
 
+# token
+/token
+
 # misc
 .DS_Store
 .env.local
