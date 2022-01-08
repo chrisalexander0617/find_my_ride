@@ -1,4 +1,3 @@
-import firebase from 'firebase'
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from '@firebase/firestore'
 // import { getAnalytics } from "firebase/analytics";
@@ -12,8 +11,6 @@ const firebaseConfig = {
   appId:process.env.REACT_APP_APP_ID,
   measurementId:process.env.REACT_APP_MEASUREMENT_ID
 };
-
-console.log(firebase)
 
 
 // Initialize Firebase Connection
