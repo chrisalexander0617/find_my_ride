@@ -17,12 +17,18 @@ export default function FindForm(){
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <Input placeholder="Make" handleChange={handleChangeMake} required="required" />
-                <Input placeholder="Model" handleChange={handleChangeModel} required="required" />
-                <Input placeholder="License" handleChange={handleChangeLicense} required="required" />
-                <Input placeholder="VIN" handleChange={handleChangeVIN} required="required" />
-                <Button classes="bg-gray-400" type="submit" text="Submit" />
+            <form  onSubmit={handleSubmit}>
+                <div className="flex flex-col gap-3">
+                    <div className="grid grid-cols-2 gap-3">
+                        <Input placeholder="Make" handleChange={handleChangeMake} required="required" />
+                        <Input placeholder="Model" handleChange={handleChangeModel} required="required" />
+                        <Input placeholder="License" handleChange={handleChangeLicense} required="required" />
+                        <Input placeholder="VIN" handleChange={handleChangeVIN} required="required" />
+                    </div>
+                    <div className="grid grid-cols-1">
+                        <Button classes="bg-green-300 w-full col-12 text-gray-900" type="submit" text="Submit" />
+                    </div>
+                </div>
             </form>
         </>
     )

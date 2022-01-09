@@ -1,9 +1,15 @@
 import React from 'react'
 
-export const Container = ({children}) => {
+export const Container = props => {
+   
     return (
         <>
-            <div className={`container sm:container mx-auto flex justify-center items-center flex-col px-10`}>{children}</div>
+            <div 
+                style={{padding:props.padding}}
+                className={`container sm:container mx-auto flex gap-10 flex-col px-10`}
+            >
+            {props.children}
+            </div>
         </>
     )
 }

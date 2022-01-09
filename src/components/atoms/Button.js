@@ -11,7 +11,6 @@ export const Button = props => {
                 px-12 
                 py-3 
                 text-white 
-                rounded-lg 
                 ${props.classes}`}
                 >
                 {props.text}
