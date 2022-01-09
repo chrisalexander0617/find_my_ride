@@ -10,7 +10,6 @@ export const Button = props => {
                 btn
                 px-12 
                 py-3 
-                text-gray-900
                 ${props.classes}`}
                 >
                 {props.text}

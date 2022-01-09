@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { db } from '../firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import Card from '../components/atoms/Card'
+import { Card } from '../components/atoms/Card'
 
 export default function Database(){
     const [vehicles, setVehicles] = useState([])

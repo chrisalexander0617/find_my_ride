@@ -26,7 +26,7 @@ export default function FindForm(){
                         <Input placeholder="VIN" handleChange={handleChangeVIN} required="required" />
                     </div>
                     <div className="grid grid-cols-1">
-                        <Button classes="bg-green-300 w-full col-12 text-gray-900" type="submit" text="Submit" />
+                        <Button classes="bg-green-300 w-full col-12 text-gray-900 font-bold" type="submit" text="Submit" />
                     </div>
                 </div>
             </form>
