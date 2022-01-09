@@ -27,6 +27,7 @@ code {
 input {
   text-transform: uppercase;
 }
+
 .splash-screen {
   background-color:#222751;
   height:100vh;

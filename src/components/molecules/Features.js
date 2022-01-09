@@ -16,12 +16,12 @@ import { TextCard } from '../atoms/TextCard'
                         <TextCard 
                             classes="bg-white text-white"
                             cardTitle="Insurance Advice"
-                            cardText="Don't always rely on law enforcement to always be available to recover your car"
+                            cardText="Learn about plans, tricks and hacks to make car insurance truly work in your favor"
                         />
                         <TextCard 
                             classes="bg-white text-white"
                             cardTitle="Safety Tips"
-                            cardText="Don't always rely on law enforcement to always be available to recover your car"
+                            cardText="Learn tactics that keeps you and your ride safe and sound without putting you and your family in danger "
                         />
                     </div>
                 </Container>
