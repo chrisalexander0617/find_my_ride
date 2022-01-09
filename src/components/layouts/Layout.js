@@ -12,11 +12,16 @@ function Layout(props){
         setUser(true)
     }
 
+    const login = e => {
+        setUser(false)
+        isModalOpen(true)
+    }
+
     return (
         <>
             <Nav 
                 user={user}
-                handleLogin={() => setUser(true)}
+                handleLogin={login}
                 handleLogout={() => setUser(false)}
                 handleOpenModal={() => isModalOpen(true)} 
             />

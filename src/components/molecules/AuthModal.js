@@ -29,21 +29,24 @@ export const AuthModal = props => {
                         props.user 
                         ? 
                         <div>
-                            <form className="flex gap-2 flex-col">
+                            <form className="flex gap-2 flex-col"  onSubmit={props.handleLogin}>
                                 <Input type="email" placeholder="Email" classes="border-gray-900 bg-gray-100 w-full" />
                                 <Input type="password" placeholder="Password" classes="border-gray-900 bg-gray-100 w-full" />
+                                <Button type="submit" text="Login" classes="bg-green-300 text-gray-900" />
                             </form> 
                             <p className="text-gray-600 text-sm text-center">Already have an account? Login instead!</p>
                         </div>
                         :
-                        <form className="flex gap-2 flex-col" onSubmit={props.handleSignUp}>
-                            <Input type="text" placeholder="Name" classes="border-gray-900 bg-gray-100 w-full" />
-                            <Input type="email" placeholder="Email" classes="border-gray-900 bg-gray-100 w-full" />
-                            <Input type="password" placeholder="Password" classes="border-gray-900 bg-gray-100 w-full" />
-                            <Button type="submit" text="Sign Up" classes="bg-green-300 text-gray-900" />
-                        </form> 
+                        <div>
+                            <form className="flex gap-2 flex-col" onSubmit={props.handleSignUp}>
+                                <Input type="text" placeholder="Name" classes="border-gray-900 bg-gray-100 w-full" />
+                                <Input type="email" placeholder="Email" classes="border-gray-900 bg-gray-100 w-full" />
+                                <Input type="password" placeholder="Password" classes="border-gray-900 bg-gray-100 w-full" />
+                                <Button type="submit" text="Sign Up" classes="bg-green-300 text-gray-900" />
+                            </form> 
+                            <p className="text-gray-600 text-sm text-center">Already have an account? Login instead!</p>
+                        </div>
                     }
-                    
                 </div>
             </div>
         </>
