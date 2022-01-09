@@ -4,17 +4,20 @@ export const Card = props => {
     return (
         <>
             <div className="card shadow-lg m-3">
-                <div className="mb-3">
-                    <img style={{
-                        height:'150px', 
-                        width:'100%', 
-                        objectFit:'cover',
-                        
-                        }}
-                        src={props.img}
-                        alt="" 
-                    />
-                </div>
+                {   
+                    props.img  ? 
+                    <div className="mb-3">
+                        <img style={{
+                            height:'150px', 
+                            width:'100%', 
+                            objectFit:'cover',
+                            
+                            }}
+                            src={props.img}
+                            alt="" 
+                        />
+                    </div> : null
+                }
                 <div className="px-10 mb-2">
                     <div className="flex justify-between w-full mb-2">
                         <div>

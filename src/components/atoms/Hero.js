@@ -3,7 +3,7 @@ import { Container } from './Container'
 import { Link } from 'react-router-dom'
 import { Button } from './Button'
 
-import FindForm from '../FindForm'
+import ReportForm from '../ReportForm'
 
 
 
@@ -27,7 +27,7 @@ export default function Hero(){
                             </div>
                         </div>
                         <div>
-                           <FindForm />
+                           <ReportForm />
                         </div>
                     </div>
                 </Container>

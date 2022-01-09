@@ -3,6 +3,10 @@ import { Input } from '../atoms/Input'
 import { Button } from '../atoms/Button'
 import { BiX } from "react-icons/bi";
 
+//authentication handlers
+
+
+
 const modalWrapperStyles = {
     position:'fixed',
     top:0,

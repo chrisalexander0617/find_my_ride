@@ -1,5 +1,7 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from '@firebase/firestore'
+import { getAuth, sendSignInLinkToEmail } from "@firebase/auth";
+
 // import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {

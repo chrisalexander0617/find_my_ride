@@ -38,19 +38,52 @@ export default function ReportForm(props){
         <>
             <form onSubmit={addVehicle}>
                 <div className="grid grid-cols-2 gap-3">
-                    <Input type="text" placeholder="Make" handleChange={e => setMake(e.target.value)} required="required" />
-                    <Input type="text" placeholder="Model" handleChange={e => setModel(e.target.value)} required="required" />
-                    <Input type="text" placeholder="Color" handleChange={e => setColor(e.target.value)} required="required" />
-                    <Input type="text" placeholder="License" handleChange={e => setLicense(e.target.value)} required="required" />
-                    <Input type="text" placeholder="VIN" handleChange={e => setVIN(e.target.value)} required="required" />
-                    <Input type="text" placeholder="Location" handleChange={e => setLocation(e.target.value)} required="required" />
-                    <Input type="file" placeholder="Image" handleChange={e => setImg(e.target.value)} required="required" text="Upload" />
+                    <Input
+                        classes="bg-gray-800 border border-green-300" 
+                        type="text" 
+                        placeholder="Make" 
+                        handleChange={e => setMake(e.target.value)} 
+                        required="required" />
+                    <Input
+                        classes="bg-gray-800 border border-green-300" 
+                        type="text" 
+                        placeholder="Model" 
+                        handleChange={e => setModel(e.target.value)} 
+                        required="required" />
+                    <Input
+                        classes="bg-gray-800 border border-green-300" type="text" 
+                        placeholder="Color" 
+                        handleChange={e => setColor(e.target.value)} 
+                        required="required" />
+                    <Input
+                        classes="bg-gray-800 border border-green-300" 
+                        type="text" 
+                        placeholder="License" 
+                        handleChange={e => setLicense(e.target.value)} 
+                        required="required" />
+                    <Input
+                        classes="bg-gray-800 border border-green-300" 
+                        type="text" 
+                        placeholder="VIN" 
+                        handleChange={e => setVIN(e.target.value)} 
+                        required="required" />
+                    <Input
+                        classes="bg-gray-800 border border-green-300" 
+                        type="text" 
+                        placeholder="Location" 
+                        handleChange={e => setLocation(e.target.value)} 
+                        required="required" />
+                    {/* 
+                    <Input 
+                        type="file" 
+                        placeholder="Image" 
+                        handleChange={e => setImg(e.target.value)} 
+                        required="required" 
+                        text="Upload" />
+                    */}
                 </div>
                 <div className="grid grid-cols-1 gap-3">
-                    <Button classes="bg-blue-600 my-5 w-full" type="submit" text="Submit" />
-                </div>
-                <div className="grid grid-cols-1 gap-3">
-                    <Link to="/"><Button classes="bg-gray-100 text-blue-900 w-full" text="Go Back" /></Link>
+                    <Button classes="bg-green-300 my-5 w-full" type="submit" text="Submit" />
                 </div>
             </form>
         </>
