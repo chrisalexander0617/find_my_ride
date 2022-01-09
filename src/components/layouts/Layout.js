@@ -3,32 +3,39 @@ import { Nav } from '../Nav'
 import { AuthModal } from '../molecules/AuthModal'
 
 function Layout(props){
-    const [modal, isModalOpen] = useState(false)
-    const [user, setUser] = useState(false)
+    const [isLoggedIn, setLoggedIn] = useState(false)
+    const [isModalOpen, setModalOpen] = useState(false)
 
-    const signUp = e => {
+    // Handled by login button in
+    const login = e => {
         e.preventDefault()
-        isModalOpen(false)
-        setUser(true)
+        setLoggedIn(true)
+        setModalOpen(false)
     }
 
-    const login = e => {
-        setUser(false)
-        isModalOpen(true)
+    const logout = e => {
+        e.preventDefault()  
+        setLoggedIn(false)
     }
 
     return (
         <>
             <Nav 
-                user={user}
-                handleLogin={login}
-                handleLogout={() => setUser(false)}
-                handleOpenModal={() => isModalOpen(true)} 
+                isLoggedIn={isLoggedIn}
+                openModal={() => setModalOpen(true)}
+                handleLogout={logout}
             />
-            <main>
-                {props.children}
-            </main> 
-            { modal ? <AuthModal handleSignUp={signUp} user={user} handleCloseModal={() => isModalOpen(false)} /> : null }
+            <main>{props.children}</main> 
+            { 
+                isModalOpen 
+                ?
+                <AuthModal 
+                    handleLogin={login}
+                    handleCloseModal={() =>  setModalOpen(false)} 
+                />  
+                : 
+                null
+            }
         </>
     )
 } 
