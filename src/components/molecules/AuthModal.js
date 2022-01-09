@@ -26,7 +26,7 @@ export const AuthModal = props => {
                         <h2 className="text-2xl font-bold text-gray-900">Log In</h2>
                         <p>Recover and report you vehicle for free</p>
                         <div>
-                            <form className="flex gap-2 flex-col"  onSubmit={props.handleLogin}>
+                            <form className="flex gap-2 flex-col mb-3"  onSubmit={props.handleLogin}>
                                 <Input type="email" placeholder="Email" classes="border-gray-900 bg-gray-100 w-full" />
                                 <Input type="password" placeholder="Password" classes="border-gray-900 bg-gray-100 w-full" />
                                 <Button type="submit" text="Login" classes="bg-green-300 text-gray-900" />
