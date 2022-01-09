@@ -5,9 +5,9 @@ export const Nav = props => {
     return  (
         <>   
             <nav className="bg-gray-900">
-                <div className="w-full container sm:container mx-auto flex gap-3 flex-row justify-between py-5 px-10">
-                    <Link className="text-2xl font-bold text-green-300" to="/">Find My Ride</Link>
-                    <div>
+                <div className="w-full container sm:container  mx-auto flex gap-3 flex-row justify-between items-center py-5 px-10">
+                    <Link className=" text-md lg:text-2xl font-bold text-green-300" to="/">Find My Ride</Link>
+                    <div className="flex flex-row">
                     {
                         props.isLoggedIn ? 
                         <button 
@@ -23,7 +23,7 @@ export const Nav = props => {
                         >
                         Log In
                         </button>
-                    }
+                    } 
                     <Link to="/" className="text-gray-900 font-bold bg-green-300 p-2 px-5" >Signup</Link>
                     </div>
                 </div>
