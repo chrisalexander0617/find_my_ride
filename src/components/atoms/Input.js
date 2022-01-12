@@ -7,7 +7,6 @@ export const Input = props => {
                 type={props.type}
                 placeholder={props.placeholder}  
                 className={`px-6 py-3 m-0  ${props.classes}`}
-
                 onChange={props.handleChange}
                 required={props.required} 
                 multiple={props.multiple}

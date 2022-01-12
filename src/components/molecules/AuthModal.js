@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Input } from '../atoms/Input'
 import { Button } from '../atoms/Button'
 import { BiX } from "react-icons/bi";
 
 //authentication handlers
-
-
 
 const modalWrapperStyles = {
     position:'fixed',
@@ -22,6 +20,11 @@ const modalStyles = {
 }
 
 export const AuthModal = props => {
+
+    const [email, setEmail] = useState(null)
+    const [password, setPassword] = useState(null)
+
+
     return (
         <>
             <div style={modalWrapperStyles} className="modal-wrapper flex items-center justify-center">
@@ -30,10 +33,27 @@ export const AuthModal = props => {
                         <h2 className="text-2xl font-bold text-gray-900">Log In</h2>
                         <p>Recover and report you vehicle for free</p>
                         <div>
-                            <form className="flex gap-2 flex-col mb-3"  onSubmit={props.handleLogin}>
-                                <Input type="email" placeholder="Email" classes="border-gray-900 bg-gray-100 w-full" />
-                                <Input type="password" placeholder="Password" classes="border-gray-900 bg-gray-100 w-full" />
-                                <Button type="submit" text="Login" classes="bg-green-300 text-gray-900" />
+                            <form 
+                                className="flex gap-2 flex-col mb-3" 
+                                onSubmit={props.login}
+                            >
+                                <Input 
+                                    type="email" 
+                                    placeholder="Email" 
+                                    classes="border-gray-900 bg-gray-100 w-full" 
+                                    handleChange={e => setEmail(e.target.value)}
+                                />
+                                <Input 
+                                    type="password" 
+                                    placeholder="Password" 
+                                    classes="border-gray-900 bg-gray-100 w-full" 
+                                    handleChange={e => setPassword(e.target.value)}
+                                />
+                                <Button 
+                                    type="submit" 
+                                    text="Login" 
+                                    classes="bg-green-300 text-gray-900" 
+                                />
                             </form> 
                             <p className="text-gray-600 text-sm text-center">Don't have an account? <a href="/">Sign up instead!</a></p>
                         </div>

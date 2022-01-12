@@ -30,7 +30,7 @@ function Layout(props){
                 isModalOpen 
                 ?
                 <AuthModal 
-                    handleLogin={login}
+                    login={login}
                     handleCloseModal={() =>  setModalOpen(false)} 
                 />  
                 : 

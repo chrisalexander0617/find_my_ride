@@ -2,19 +2,12 @@ import React from 'react'
 import { Container } from './Container'
 import { Link } from 'react-router-dom'
 import { Button } from './Button'
-
 import ReportForm from '../ReportForm'
-
-
-
-const styles = {
-
-}
 
 export default function Hero(){
     return (
         <>
-            <div className="bg-gray-900"  style={{height:'auto', padding:' 100px 0px 175px 0px'}}>
+            <div className="bg-gray-900 test"  style={{height:'auto', padding:' 100px 0px 175px 0px'}}>
                 <Container>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
                         <div className="flex flex-col gap-10">

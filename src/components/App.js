@@ -20,7 +20,9 @@ export default function App() {
         <Layout>
         {/* <Nav /> */}
           <Routes>
-              <Route path="/" element={<Home />} />
+              {/* Handles the logging in of users */}
+                <Route path="/" element={<Home />} />
+              {/* Handles the logging in of users */}
               <Route path="find" element={<Find />} />
               <Route path="report" element={<Report />} />
               <Route path="database" element={<Database />} />
