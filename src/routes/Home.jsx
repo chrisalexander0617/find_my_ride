@@ -6,7 +6,7 @@ export default function Home(){
     return (
         <>
             <Hero />
-            <Features margin="-100px" />
+            <Features margin="-110px" />
         </>
     )
 }
