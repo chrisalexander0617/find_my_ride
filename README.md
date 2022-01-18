@@ -29,6 +29,9 @@ Create a firebase account and create a new app https://console.firebase.google.c
 
 In the project directory, you can run:
 
+## Collaboration
+If you would like to be a collaborator on this project, email me at hello@digyt.co. Push any requested changes to the `dev` branch. All branches must have `fix/` or `feature/` as a prefix. For example, `fix/{ticket number}`. This helps with tracking issues.
+
 ### `npm start`
 
 Runs the app in the development mode.\
